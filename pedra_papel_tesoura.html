@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra - Papel - Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body align="center">
+    <!-- Títulos -->
+    <h1>Pedra - Papel - Tesoura</h1>
+    <h2>Escolha seu ataque:</h2>
+
+	<text id="titulo"><b>Vitórias: </b></text> 
+	<text id="v">0</text>
+	<text id="titulo"><b>Empates: </b></text>
+	<text id="e">0</text>
+	<text id="titulo"><b>Derrotas: </b></text>
+	<text id="d">0</text><br><br>
+
+    <!-- Botões -->
+    <div id="botoes">
+    	<button value="Rock" onClick="escolha(this.value)"><img src="./images/Rock.png" alt="Pedra"><p/>Pedra</button>
+  		<button value="Paper" onClick="escolha(this.value)"><img src="./images/Paper.png" alt="Papel"><p/>Papel</button>
+		<button value="Scissor" onClick="escolha(this.value)"><img src="./images/Scissor.png"alt="Tesoura"><p/>Tesoura</button>
+    </div>
+
+    <!-- div com o resultado -->
+    <div id="resultado">
+		<img src="./images/versus.svg">
+		<a id="lblPlayer"><b>Player</b></a>
+		<a id="lblNpc"><b>Computador</b></a>
+		<img alt="Jogador" id="player">
+		<img alt="Computador" id="npc"><p/>
+		<button onClick="restart()">Jogar Novamente</button>
+    </div>
+</body>
+</html>

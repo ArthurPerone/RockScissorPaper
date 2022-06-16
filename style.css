@@ -1,0 +1,59 @@
+*{
+    font-family: Arial, serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #33dfff;
+}
+h1,h2,h3,h4,h5,h6, text{
+    margin: 1% 0;
+}
+h3{
+    display: flexbox;
+}
+#titulo{
+    margin-left:1vw;
+}
+
+/*Button*/
+button{
+    transition: transform .2s;
+    margin: 0 2.5%;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+/*Resultado*/
+#resultado{
+    display: none;
+}
+#player, #npc{
+    position:absolute;
+    top: 38vh;
+}
+#player{
+    left:32vw;
+}
+#npc{
+    right: 32vw;
+}
+#lblPlayer,#lblNpc{
+    text-shadow:#444 2px -2px, #444 -2px 2px, #444 2px 2px, #444 -2px -2px;
+    color: white;
+    font-size: 30px;
+    position:absolute;
+    top: 28vh;
+}
+#lblNpc{
+    right:30vw;
+}
+#lblPlayer{
+    left:33.5vw;
+}
+
+
+
