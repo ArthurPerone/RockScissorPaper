@@ -19,13 +19,16 @@ function escolha(value){
 
         //se o final do caminho = Rock.png
         if(npc.src.substr((npc.src.lastIndexOf("/")+1 - npc.src.length)) == value + ".png"){
+            msgFinal = "O jogo ficou empatado!";
             empate = parseInt(e.innerHTML)+1; //guarda na variavel empate o valor de e + 1
             e.innerHTML = empate; // atualiza a pontuação de empate
         //se o final do caminho = Scissor.png
         }else if(npc.src.substr((npc.src.lastIndexOf("/")+1 - npc.src.length)) == "Scissor.png"){
+            msgFinal = "O Player Venceu!";
             vitoria = parseInt(v.innerHTML)+1; //guarda na variavel vitoria o valor de v + 1
             v.innerHTML = vitoria; // atualiza a pontuação de vitoria
         }else{
+            msgFinal = "O Computador Venceu!";
             derrota = parseInt(d.innerHTML)+1; //guarda na variavel derrota o valor de d + 1
             d.innerHTML = derrota; // atualiza a pontuação de derrota
         }
@@ -39,13 +42,16 @@ function escolha(value){
 
         //se o final do caminho = Paper.png
         if(npc.src.substr((npc.src.lastIndexOf("/")+1 - npc.src.length)) == value + ".png"){
+            msgFinal = "O jogo ficou empatado!";
             empate = parseInt(e.innerHTML)+1; //guarda na variavel empate o valor de e + 1
             e.innerHTML = empate; // atualiza a pontuação de empate
         //se o final do caminho = Rock.png
         }else if(npc.src.substr((npc.src.lastIndexOf("/")+ 1 - npc.src.length)) == "Rock.png"){
+            msgFinal = "O Player Venceu!";
             vitoria = parseInt(v.innerHTML)+1; //guarda na variavel vitoria o valor de v + 1
             v.innerHTML = vitoria; // atualiza a pontuação de vitoria
         }else{
+            msgFinal = "O Computador Venceu!";
             derrota = parseInt(d.innerHTML)+1; //guarda na variavel derrota o valor de d + 1
             d.innerHTML = derrota; // atualiza a pontuação de derrota
         }
@@ -59,13 +65,16 @@ function escolha(value){
 
         //se o final do caminho = Scissor.png
         if(npc.src.substr((npc.src.lastIndexOf("/")+1 - npc.src.length)) == value + ".png"){
+            msgFinal = "O jogo ficou empatado!";
             empate = parseInt(e.innerHTML)+1; //guarda na variavel empate o valor de e + 1
             e.innerHTML = empate; // atualiza a pontuação de empate
         //se o final do caminho = Paper.png
         }else if(npc.src.substr((npc.src.lastIndexOf("/")+1 - npc.src.length)) == "Paper.png"){
+            msgFinal = "O Player Venceu!";
             vitoria = parseInt(v.innerHTML)+1; //guarda na variavel vitoria o valor de v + 1
             v.innerHTML = vitoria; // atualiza a pontuação de vitoria
         }else{
+            msgFinal = "O Computador Venceu!";
             derrota = parseInt(d.innerHTML)+1; //guarda na variavel derrota o valor de d + 1
             d.innerHTML = derrota; // atualiza a pontuação de derrota
         }
@@ -74,8 +83,9 @@ function escolha(value){
 
     resultado.style.display = "block";
     botoes.style.display = "none";
-
+    setTimeout(function(){ alert(msgFinal);},100);
 }
+
 function mostraResultado(){
     var r = Math.floor(Math.random() * 3);
     if(r==0)
