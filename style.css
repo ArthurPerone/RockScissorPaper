@@ -51,8 +51,8 @@ button:hover{
     }
     #npc{
         position:absolute;
-        bottom:11vh;
-        left:35vw;
+        top:58vh;
+        left:30vw;
     }
 
     #lblPlayer,#lblNpc{
@@ -63,8 +63,8 @@ button:hover{
         
     }
     #lblNpc{
-        margin:0 35vw;
-        top:58vh;
+        left:22vw;
+        top:81vh;
     }
     #lblPlayer{
         left:35vw;
