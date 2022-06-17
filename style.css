@@ -45,13 +45,13 @@ button:hover{
     }
     #player{
         position:absolute;
-        top:25vh;
-        left:35vw;
+        top:27vh;
+        left:30vw;
 
     }
     #npc{
         position:absolute;
-        top:58vh;
+        top:60vh;
         left:30vw;
     }
 
@@ -63,16 +63,16 @@ button:hover{
         
     }
     #lblNpc{
-        left:22vw;
-        top:81vh;
+       left:22vw;
+        top:83vh;
     }
     #lblPlayer{
         left:35vw;
-        top:25vh;
+        top:19vh;
     }
     #vs{
         position: absolute;
-        top:34vh;
+        top:36vh;
         left:-25vw;
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -82,8 +82,8 @@ button:hover{
         transform:rotate(90deg);
         width: 150%;
         height: 40%;
-
     }
+    
     #restart{
         position: relative;
         top: 70vh;
