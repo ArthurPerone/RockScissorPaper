@@ -74,6 +74,11 @@ button:hover{
         position: absolute;
         top:34vh;
         left:-25vw;
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform:rotate(90deg);
         transform:rotate(90deg);
         width: 150%;
         height: 40%;
