@@ -4,15 +4,15 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #33dfff;
 }
+
 h1,h2,h3,h4,h5,h6, text{
-    margin: 1% 0;
+    margin: 0.5% 0;
 }
-h3{
-    display: flexbox;
-}
+
 #titulo{
     margin-left:1vw;
 }
@@ -23,6 +23,7 @@ button{
     margin: 0 2.5%;
     cursor: pointer;
 }
+
 button:hover{
     transform: scale(1.2);
 }
@@ -31,29 +32,89 @@ button:hover{
 #resultado{
     display: none;
 }
-#player, #npc{
-    position:absolute;
-    top: 38vh;
-}
-#player{
-    left:32vw;
-}
-#npc{
-    right: 32vw;
-}
-#lblPlayer,#lblNpc{
-    text-shadow:#444 2px -2px, #444 -2px 2px, #444 2px 2px, #444 -2px -2px;
-    color: white;
-    font-size: 30px;
-    position:absolute;
-    top: 28vh;
-}
-#lblNpc{
-    right:30vw;
-}
-#lblPlayer{
-    left:33.5vw;
+
+@media only screen and (max-device-width: 900px) {
+    #botoes button{
+        margin:1% 5%;
+    }
+    #botoes button img{
+        width:80%;
+    }
+    #botoes button p{
+       margin: 0;
+    }
+    #player{
+        position:absolute;
+        top:25vh;
+        left:30vw;
+
+    }
+    #npc{
+        position:absolute;
+        bottom:11vh;
+        left:30vw;
+    }
+
+    #lblPlayer,#lblNpc{
+        text-shadow:#444 2px -2px, #444 -2px 2px, #444 2px 2px, #444 -2px -2px;
+        color: white;
+        font-size: 30px;
+        position:absolute;
+        
+    }
+    #lblNpc{
+        left:22vw;
+        top:58vh;
+    }
+    #lblPlayer{
+        left:35vw;
+        top:17vh;
+    }
+    #vs{
+        position: absolute;
+        top:34vh;
+        left:-25vw;
+        transform:rotate(90deg);
+        width: 150%;
+        height: 40%;
+
+    }
+    #restart{
+        position: relative;
+        top: 70vh;
+    }
 }
 
+@media only screen and (min-device-width: 901px) {
+    #botoes{
+        margin:2%;
+    }
+    #player, #npc{
+        position:absolute;
+        top: 38vh;
+    }
+    #player{
+        left:32vw;
+    }
+    #npc{
+        right: 32vw;
+    }
 
-
+    #lblPlayer,#lblNpc{
+        text-shadow:#444 2px -2px, #444 -2px 2px, #444 2px 2px, #444 -2px -2px;
+        color: white;
+        font-size: 30px;
+        position:absolute;
+        top: 28vh;
+    }
+    #lblNpc{
+        right:30vw;
+    }
+    #lblPlayer{
+        left:33.5vw;
+    }
+    #restart{
+        margin: 1% 0;
+        
+    }
+}
