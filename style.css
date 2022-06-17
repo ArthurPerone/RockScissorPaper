@@ -46,13 +46,13 @@ button:hover{
     #player{
         position:absolute;
         top:25vh;
-        left:30vw;
+        left:35vw;
 
     }
     #npc{
         position:absolute;
         bottom:11vh;
-        left:30vw;
+        left:35vw;
     }
 
     #lblPlayer,#lblNpc{
@@ -63,10 +63,10 @@ button:hover{
         
     }
     #lblNpc{
-        left:22vw;
+        left:25vw;
         top:58vh;
     }
-    #lblPlayer b{
+    #lblPlayer{
         left:35vw;
         top:25vh;
     }
