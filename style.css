@@ -63,7 +63,7 @@ button:hover{
         
     }
     #lblNpc{
-        left:25vw;
+        margin:0 35vw;
         top:58vh;
     }
     #lblPlayer{
